@@ -1,0 +1,75 @@
+.item {
+    width: 110px;
+    height: 110px;
+    background-color: #f9f5eb;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    animation: itemEnter 0.5s;
+    box-shadow: 0 0 5px 2px #607eaa5e;
+    position: relative;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 13px;
+    word-wrap: normal;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    transition: color 0.2s;
+}
+
+.icon {
+    font-size: 24px;
+    color: #1c3879;
+    transition: color 0.2s;
+}
+
+.item:hover {
+    background-color: #607eaa;
+    box-shadow: 0 0 4px 2px #0000006e;
+    transform: scale(0.95);
+
+    .icon {
+        color: #eae3d2;
+    }
+    .title {
+        color: #fff;
+    }
+}
+
+@keyframes itemEnter {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+    width: auto;
+    height: auto;
+    background-color: #eae3d2;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    animation: enter 0.5s;
+    @media screen and (max-width: 600px) {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@keyframes enter {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.title {
+    text-align: center;
+    color: rgb(59, 59, 59);
+    padding: 10px;
+    letter-spacing: 6px;
+    user-select: none;
+}

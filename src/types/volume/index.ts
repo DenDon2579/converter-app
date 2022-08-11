@@ -1,0 +1,30 @@
+export type volumeTitle =
+    | 'Cubic meter'
+    | 'Cubic decimeter'
+    | 'Cubic centimeter'
+    | 'Cubic millimeter'
+    | 'Hectoliter'
+    | 'Liter'
+    | 'Deciliter'
+    | 'Centiliter'
+    | 'Milliliter'
+    | 'Cubic foot'
+    | 'Cubic inch'
+    | 'Cubic yard'
+    | 'Acre-foot';
+
+export type volumeMetrics =
+    | 'm³'
+    | 'dm³'
+    | 'cm³'
+    | 'mm³'
+    | 'hl'
+    | 'l'
+    | 'dl'
+    | 'cl'
+    | 'ml'
+    | 'ml'
+    | 'ft³'
+    | 'in³'
+    | 'yd³'
+    | 'af³';

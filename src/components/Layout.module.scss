@@ -1,0 +1,12 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f5eb;
+    @media screen and (max-width: 600px) {
+        min-height: 100%;
+        height: auto;
+    }
+}
